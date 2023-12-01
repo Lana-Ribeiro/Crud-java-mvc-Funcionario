@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <form method="post" action="ControleFuncionario">
+            <input type="hidden" name="flag" value="cad_fun">
+            
+            <p>
+                <label for="matricula">Matricula*</label>
+                <input id="matricula" type="number" name="matricula" placeholder="Coloque sua Matricula" size="80" maxlength="80" required>
+            </p>
+            
+            <p>
+                <label for="nome">Nome*</label>
+                <input id="nome" type="text" name="nome" placeholder="Coloque o seu Nome" size="80" maxlength="80"  required>
+            </p>
+
+            <p>
+                <label for="endereco">Endereco*</label>
+                <input id="endereco" type="text" name="endereco" placeholder="Coloque o seu Endereco" size="70" maxlength="70" required>
+            </p>
+
+            <p>
+                <label for="bairo">Bairro</label>
+                <input id="bairo" type="text" name="bairro" placeholder="Coloque o seu Bairo" size="50" maxlength="50">
+            </p>
+            
+            <p>
+                <label for="cidade">Cidade</label>
+                <input id="cidade" type="text" name="cidade" placeholder="Coloque sua cidade" size="40" maxlength="40">
+            </p>
+            
+            <p>
+                <label for="cargo">Cargo</label>
+                <input id="cargo" type="text" name="cargo" placeholder="Coloque o seu Cargo" size="40" maxlength="40">
+            </p>
+
+            <p>
+                <label for="salario">Salário</label>
+                <input id="salario" type="number" name="salario" placeholder="Coloque o seu Salário" step="0.1">
+            </p>
+            
+            <p>
+                <input type="submit" value="Salvar">
+            </p>
+            
+        </form>
+    </body>
+</html>

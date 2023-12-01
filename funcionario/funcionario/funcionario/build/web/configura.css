@@ -1,0 +1,98 @@
+*{
+    margin: 0 auto;
+    border-radius: 5px;
+    font-family: Calibri;
+    
+}
+
+header, nav, main, footer{
+    width: 90%;
+    margin-bottom: 00px;
+    
+}
+
+header{
+    background-color: #de7914;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav{
+    background-color: #edea24;
+}
+
+main{
+    height: 300px;
+    background-color: #ccbb1f;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+button.botao{
+    background-color: #edea24;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+div.submenu{
+    display: none;
+}
+
+div.menu:hover div.submenu{
+    display: block;
+}
+
+div.menu:hover button.botao{
+    background-color: white;
+}
+
+div.submenu{
+    display: none;
+    position: absolute;
+    background-color: #c0c0c0;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+div.submenu a{
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    color: white; 
+}
+
+div.submenu a:hover{
+    color:#fc9403;
+}
+
+div.menu{
+    display: inline-block;
+    position: relative;
+}
+
+button.botao, div.submenu{
+    min-width: 140px;
+    text-align: left
+}
+
+main iframe{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+
+/* Quando a tela estiver em 600px ou menos */
+@media only screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+        background-color: #c0c0c0;
+        font-family: tahoma;
+    }
+}
